@@ -6,7 +6,7 @@
 variable "project" {
   description = "The project ID where all resources will be launched."
   type        = string
-  default = "trainee-labs-oat"
+  default = "centered-loader-422210-p3"
 }
 
 variable "location" {
@@ -35,7 +35,7 @@ variable "cluster_name" {
 variable "cluster_service_account_name" {
   description = "The name of the custom service account used for the GKE cluster. This parameter is limited to a maximum of 28 characters."
   type        = string
-  default     = "oat-cluster-sa"
+  default     = "my-cluster-sa"
 }
 
 variable "cluster_service_account_description" {
