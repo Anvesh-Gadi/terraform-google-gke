@@ -176,3 +176,9 @@ module "vpc_network" {
   secondary_cidr_subnetwork_width_delta  = var.secondary_cidr_subnetwork_width_delta
   secondary_cidr_subnetwork_spacing      = var.secondary_cidr_subnetwork_spacing
 }
+resource "google_project_iam_member" "service_account_roles" {
+  project = "centered-loader-422210-p3"
+  role    = "roles/monitoring.metricWriter"
+  member  = "serviceAccount:my-cluster-sa@centered-loader-422210-p3.iam.gserviceaccount.com"
+}
+
