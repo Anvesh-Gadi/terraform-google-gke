@@ -6,16 +6,19 @@
 variable "project" {
   description = "The project ID where all resources will be launched."
   type        = string
+  default = "trainee-labs-oat"
 }
 
 variable "location" {
   description = "The location (region or zone) of the GKE cluster."
   type        = string
+  default = "us-central1"
 }
 
 variable "region" {
   description = "The region for the network. If the cluster is regional, this must be the same region. Otherwise, it should be the region of the zone."
   type        = string
+  default = "us-central1"
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -32,7 +35,7 @@ variable "cluster_name" {
 variable "cluster_service_account_name" {
   description = "The name of the custom service account used for the GKE cluster. This parameter is limited to a maximum of 28 characters."
   type        = string
-  default     = "example-cluster-sa"
+  default     = "oat-cluster-sa"
 }
 
 variable "cluster_service_account_description" {
