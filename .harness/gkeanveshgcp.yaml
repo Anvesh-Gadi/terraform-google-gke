@@ -17,7 +17,7 @@ pipeline:
           runtime:
             type: Cloud
             spec: {}
-          workspace: anvesh_gke_ws
+          workspace: gketest2
           execution:
             steps:
               - step:
