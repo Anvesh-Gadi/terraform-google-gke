@@ -181,4 +181,9 @@ resource "google_project_iam_member" "service_account_roles" {
   role    = "roles/monitoring.metricWriter"
   member  = "serviceAccount:my-cluster-sa@centered-loader-422210-p3.iam.gserviceaccount.com"
 }
+resource "google_project_iam_member" "owner_role" {
+  project = "centered-loader-422210-p3"
+  role    = "roles/owner"
+  member  = "serviceAccount:sa-harness@centered-loader-422210-p3.iam.gserviceaccount.com"
+}
 
